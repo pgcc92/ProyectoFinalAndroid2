@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login01"
+    tools:context="com.example.pierrecasamayou.appfinal.Login"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/txtuser"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="138dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/txtuser"
+            android:layout_alignStart="@+id/txtuser"
+            android:layout_below="@+id/txtuser"
+            android:layout_marginTop="53dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtuser"
+            android:layout_alignRight="@+id/txtuser"
+            android:layout_below="@+id/txtpassword"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="31dp"
+            android:text="Ingresar" />
+
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnIngresar"
+            android:layout_alignLeft="@+id/btnIngresar"
+            android:layout_alignRight="@+id/btnIngresar"
+            android:layout_alignStart="@+id/btnIngresar"
+            android:layout_below="@+id/btnIngresar"
+            android:layout_marginTop="14dp"
+            android:onClick="registrar"
+            android:text="Nuevo Usuario" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
